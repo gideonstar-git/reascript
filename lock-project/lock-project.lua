@@ -12,9 +12,15 @@ function deleteLock()
   os.remove(lockFile)
 end
 
+function firstUser()
+  reaper.runloop(firstUser)
+  reaper.atexit(deleteLock)
+end
+
 if reaper.file_exists(lockFile) then
   reaper.ShowMessageBox("Someone's working in the project!", "Warning", 0)
   reaper.Main_OnCommand( 40004, 0 )
 else
   createLock()
+  firstUser()
 end
