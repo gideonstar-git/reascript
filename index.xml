@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" name="gideonstar's ReaScripts">
+  <category name="gideonstar">
+    <reapack name="lock-project.lua" type="script" desc="Lock Project">
+      <version name="1.0" author="gideonstar">
+        <source main="main">https://raw.githubusercontent.com/gideonstar-git/reascript/main/lock-project/lock-project.lua</source>
+      </version>
+    </reapack>
+  </category>
+</index>
