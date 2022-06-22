@@ -1,3 +1,11 @@
+--
+-- Locks the project when someone else is editing it. Useful when multiple
+-- people are using the same project via a cloud.
+--
+-- Needs the SWS extensions and can be installed there as a start script
+-- for the respective project.
+--
+
 projectFilename = reaper.GetProjectName()
 project, pathWithProjectFilename = reaper.EnumProjects(-1)
 projectPath = string.gsub(pathWithProjectFilename, projectFilename, "")
